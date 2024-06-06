@@ -35,9 +35,24 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .content {
   display: flex;
   flex-direction: column;
+}
+
+.title {
+  color: black;
+  font-size: 32px;
+}
+
+.paragraph {
+  color: black;
+  font-size: 18px;
 }
 
 img {

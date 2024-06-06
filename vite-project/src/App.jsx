@@ -1,5 +1,7 @@
 import Button from '@mui/material/Button'
 import { useState } from 'react'
+import Container from '../components/container.jsx'
+import image from './assets/imagen1.webp'
 
 function App() {
   const [data, setData] = useState(null)
@@ -24,6 +26,12 @@ function App() {
 
   return (
     <>
+      <div className="container">
+        <Container title="imagen 1" paragraph="ahahahah" image={image} />
+        <Container title="imagen 2" paragraph="32323" image={image} />
+        <Container title="imagen 3" paragraph="4324234" image={image} />
+      </div>
+
       <div className="content">
         <Button onClick={handleClick} variant="contained" style={{ marginTop: '20px' }}>
           ¡Haz clic!
